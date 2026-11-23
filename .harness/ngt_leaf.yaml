@@ -1,0 +1,19 @@
+template:
+  name: ngt_leaf
+  identifier: ngt_leaf
+  versionLabel: v1
+  type: Step
+  projectIdentifier: soumyo_test
+  orgIdentifier: default
+  spec:
+    type: ShellScript
+    timeout: <+input>
+    spec:
+      shell: Bash
+      onDelegate: true
+      source:
+        type: Inline
+        spec:
+          script: echo leaf-b1
+      environmentVariables: []
+      outputVariables: []
